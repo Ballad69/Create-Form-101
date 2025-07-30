@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 500px;
+        }
+        .Exercise {
+            display: flex;
+            margin: 20px;
+        }
+        .image-Exercise {
+            margin-right: 20px;
+        }
+        .Explination {
+            margin-top: 10px;
+        }
+        .form-table {
+            margin-top: 20px;
+        }
+        td {
+            padding: 5px 10px;
+            vertical-align: top;
+        }
+        input[type="text"],
+        input[type="email"] {
+        width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Exercise">
+        <div class="image-Exercise">
+<img src="100-push-ups-a-day-featured-image-barbend.com_.jpg" alt="100-push-ups-a-day-featured-image-barbend" style="float: left;margin-right: 25px;" width="300px">
+     </div>
+     <div class="Explination">
+   <p> Exercise is any physical activity that enhances or maintains physical fitness and overall<br>
+   health. It's essentially any planned,structured, and repetitive bodily movement done<br>
+   to improve or maintain one or more components of physical fitness.
+  </p>
+  </div>
+</div>
+
+<form>
+    <table class="form-table">
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" name="name" id="name"></td>
+            <td><strong>Gender:</strong><br>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" name="address" id="name"></td>
+                <td rowspan="3">
+                <strong>Hobbies:</strong><br>
+                    <input type="checkbox" name="hobby" value="swimming"> Swimming<br>
+                    <input type="checkbox" name="hobby" value="biking"> Biking<br>
+                    <input type="checkbox" name="hobby" value="reading"> Reading<br>
+                    <input type="checkbox" name="hobby" value="tv"> Watching TV<br>
+                    <input type="checkbox" name="hobby" value="playing"> Playing
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email-Id</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Number:</td>
+                <td><input type="text" name="contact" id="contact"></td>
+            </tr>
+        </table>
+    </form>
+</body>
